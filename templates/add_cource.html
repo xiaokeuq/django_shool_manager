@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加课程</title>
+</head>
+<body>
+    <form action=" " method="post">
+    {% csrf_token %}
+        课程名：<input type="text" name="co_name">
+        课程描述：<input type="text" name="co_describe">
+        课程时长：<input type="number" name="co_times">
+        <input type="submit" value = "提交">
+    </form>
+</body>
+</html>

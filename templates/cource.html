@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程</title>
+</head>
+<body>
+<table border="1">
+        <tr>
+            <th>ID</th>
+            <th>课程名</th>
+            <th>课程描述</th>
+            <th>课程时长</th>
+        </tr>
+    {% for c in cources %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.name }}</td>
+            <td>{{ c.describe }}</td>
+            <td>{{ c.times }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<a href="/add_stu">添加学生信息</a>
+</body>
+</html>
